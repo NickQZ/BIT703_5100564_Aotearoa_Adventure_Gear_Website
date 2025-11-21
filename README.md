@@ -51,9 +51,17 @@ This project demonstrates competency in:
 
 - Clear, consistent navigation menu
 
+- Back To Top Button for improved usability
+
+- Hover underline affect on navigational links
+
+- Product Carousel on index.html (home page)
+
+- Add to cart Animation and Pop-up notification
+
 # Interactive Shopping Cart
 
-- Automatic updates to total
+- Automatic updates to total (*If html is pricing changes, required manual change)
 
 - Free shipping automatically applied when total exceeds $600
 
