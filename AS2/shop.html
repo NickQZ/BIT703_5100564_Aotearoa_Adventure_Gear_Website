@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aotearoa Adventure Gear - Shop</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,200;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/floating-anchor.css" />
+    <link rel="stylesheet" href="css/popups.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg border-bottom">
+      <div class="container py-3">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="images/AdventureLogo.png"
+            class="nav-logo me-4"
+            alt="Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about_us">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+            <li class="nav-cart">
+              <a class="btn btn-dark ms-2" href="cart.html"
+                ><i
+                  class="fa-solid fa-cart-shopping fa-beat me-2"
+                  style="color: #74c0fc"
+                ></i
+                >Your Cart</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero text-center py-5">
+      <div class="container">
+        <h4 class="display-5 mb-3">Search our gear for your next adventure!</h4>
+
+        <form class="d-none d-lg-flex mt-3 flex-grow-1 rounded" role="search">
+          <div class="input-group me-2">
+            <span class="input-group-text border-0 px-2">
+              <i
+                class="fa-solid fa-magnifying-glass"
+                style="color: #95c882"
+              ></i>
+            </span>
+
+            <input
+              class="form-control border-0"
+              type="search"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+          </div>
+
+          <button class="btn btn-dark px-4 rounded">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED CATEGORIES ================= -->
+    <section id="featured-cat" class="featured-cat border-top border-bottom">
+      <div class="container py-5">
+        <h1 class="text-center mb-4">Featured Categories</h1>
+        <h4 class="text-center mb-4">View our wide range of categories</h4>
+
+        <div class="row text-center g-4">
+          <div class="col-md-3">
+            <a href="#"
+              ><img src="images/product3.jpg" class="img-fluid rounded" alt=""
+            /></a>
+            <p class="mt-2 fw-semibold">Knives</p>
+          </div>
+
+          <div class="col-md-3">
+            <a href="#"
+              ><img src="images/product6.jpg" class="img-fluid rounded" alt=""
+            /></a>
+            <p class="mt-2 fw-semibold">Clothes</p>
+          </div>
+
+          <div class="col-md-3">
+            <a href="#"
+              ><img src="images/product5.jpg" class="img-fluid rounded" alt=""
+            /></a>
+            <p class="mt-2 fw-semibold">Tents</p>
+          </div>
+
+          <!-- Shop Now Button -->
+          <div
+            class="col-md-3 d-flex align-items-center justify-content-center"
+          >
+            <a
+              href="shop.html"
+              class="btn btn-dark btn-lg px-4 py-3 w-100 h-100 d-flex align-items-center justify-content-center"
+              >Shop Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="newsletter">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <!-- Left image -->
+          <div class="col-md-4 text-center mb-4 mb-md-0">
+            <div class="p-3">
+              <img
+                src="images/newsletter-image.jpg"
+                class="img-fluid rounded"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <h1 class="mb-3 fw-light">Newsletter</h1>
+
+            <div class="input d-flex gap-2">
+              <input
+                type="email"
+                id="newsletterEmail"
+                class="form-control"
+                placeholder="Email Address"
+              />
+              <div class="col-md-4">
+                <button
+                  id="subscribeBtn"
+                  class="btn btn-light w-100 px-4 rounded"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCT INFORMATION WINDOW ================= -->
+    <section class="product info">
+      <div class="container py-5">
+        <div class="row">
+          <!-- Left Text Column -->
+          <div
+            class="col-md-4 d-flex flex-column justify-content-center border-end pe-4"
+          >
+            <h1 class="mb-3">Enhance your next adventure</h1>
+            <p class="text-muted">
+              Browse our best hand picked, outdoor essentials to make your every
+              journey extraordinary.
+            </p>
+            <a href="shop.html" class="btn btn-dark mt-3 w-50">Browse All</a>
+          </div>
+
+          <!-- Right Products Column -->
+          <div class="col-md-8">
+            <div class="row g-4">
+              <!-- Product 1 -->
+              <div class="col-md-6 d-flex align-items-start">
+                <a href="product.html"
+                  ><img
+                    src="images/product1.jpg"
+                    class="img-fluid border rounded me-3"
+                    style="width: 80px; height: 80px"
+                    alt=""
+                /></a>
+                <div>
+                  <h6 class="mb-1">Ultra Durable Carabiner</h6>
+                  <div class="text-warning mb-1">
+                    &#9733;&#9733;&#9733;&#9734;&#9734;
+                  </div>
+                  <p class="mb-0 fw-semibold">$ 70</p>
+                </div>
+              </div>
+
+              <!-- Product 2 -->
+              <div class="col-md-6 d-flex align-items-start">
+                <a href="#"
+                  ><img
+                    src="images/product2.jpg"
+                    class="img-fluid border rounded me-3"
+                    style="width: 80px; height: 80px"
+                    alt=""
+                /></a>
+                <div>
+                  <h6 class="mb-1">Trail Pro Hiking Boots</h6>
+                  <div class="text-warning mb-1">
+                    &#9733;&#9733;&#9733;&#9734;&#9734;
+                  </div>
+                  <p class="mb-0 fw-semibold">$ 300</p>
+                </div>
+              </div>
+
+              <!-- Product 3 -->
+              <div class="col-md-6 d-flex align-items-start">
+                <a href="#"
+                  ><img
+                    src="images/product3.jpg"
+                    class="img-fluid border rounded me-3"
+                    style="width: 80px; height: 80px"
+                    alt=""
+                /></a>
+                <div>
+                  <h6 class="mb-1">Alpine Survival Knife</h6>
+                  <div class="text-warning mb-1">
+                    &#9733;&#9733;&#9733;&#9734;&#9734;
+                  </div>
+                  <p class="mb-0 fw-semibold">$ 2,000</p>
+                </div>
+              </div>
+
+              <!-- Product 4 -->
+              <div class="col-md-6 d-flex align-items-start">
+                <a href="#"
+                  ><img
+                    src="images/product4.jpg"
+                    class="img-fluid border rounded me-3"
+                    style="width: 80px; height: 80px"
+                    alt=""
+                /></a>
+                <div>
+                  <h6 class="mb-1">Southern Adventure Daypack</h6>
+                  <div class="text-warning mb-1">
+                    &#9733;&#9733;&#9733;&#9734;&#9734;
+                  </div>
+                  <p class="mb-0 fw-semibold">$ 600</p>
+                </div>
+              </div>
+              <!-- Product 5 -->
+              <div class="col-md-6 d-flex align-items-start">
+                <a href="#"
+                  ><img
+                    src="images/product5.jpg"
+                    class="img-fluid border rounded me-3"
+                    style="width: 80px; height: 80px"
+                    alt=""
+                /></a>
+                <div>
+                  <h6 class="mb-1">Stormshelter Tent</h6>
+                  <div class="text-warning mb-1">
+                    &#9733;&#9733;&#9733;&#9734;&#9734;
+                  </div>
+                  <p class="mb-0 fw-semibold">$ 4,000</p>
+                </div>
+              </div>
+              <!-- Product 6 -->
+              <div class="col-md-6 d-flex align-items-start">
+                <a href="#"
+                  ><img
+                    src="images/product6.jpg"
+                    class="img-fluid border rounded me-3"
+                    style="width: 80px; height: 80px"
+                    alt=""
+                /></a>
+                <div>
+                  <h6 class="mb-1">Southern Merino Jacket</h6>
+                  <div class="text-warning mb-1">
+                    &#9733;&#9733;&#9733;&#9734;&#9734;
+                  </div>
+                  <p class="mb-0 fw-semibold">$ 700</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container py-2">
+        <!-- Footer links as a list to match your CSS -->
+        <ul class="d-flex justify-content-center flex-wrap gap-3">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer copyright -->
+      <p class="text-center">
+        <a href="index.html">© Aotearoa Adventure Gear</a>
+      </p>
+    </footer>
+    <script src="js/dataValidation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <a href="#featured-cat" class="floating-anchor" id="scrollToFeatured">
+      <i class="fa-solid fa-arrow-down fa-flip-vertical"></i>
+    </a>
+  </body>
+</html>

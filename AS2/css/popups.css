@@ -1,0 +1,37 @@
+#free-shipping-msg {
+  color: var(--success-green);
+  background-color: var(--pop-up-bg);
+  padding: 10px; /* optional: make it stand out more */
+  border-radius: 5px; /* optional */
+  font-weight: bold;
+}
+
+.cart-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--pop-up-bg);
+  color: var(--success-green);
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 99999;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.cart-bounce {
+  animation: bounce 0.5s ease;
+}

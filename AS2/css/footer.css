@@ -1,0 +1,69 @@
+/* ================= FOOTER ================= */
+.footer {
+  background-color: var(--primary-color);
+}
+
+/* Footer logo */
+.footer-logo {
+  height: 100px;
+  width: auto;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+/* Footer headings */
+.footer h6 {
+  color: var(--gray-color);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Footer lists */
+.footer ul li {
+  list-style: none; /* remove default bullets */
+  padding: 0;
+  margin: 0;
+  color: var(--gray-color);
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem; /* optional: smaller text for footer */
+}
+
+/* Footer paragraphs */
+.footer p {
+  color: var(--gray-color);
+  font-size: 0.875rem;
+  margin: 0; /* remove extra margin if needed */
+}
+
+/* Footer animations */
+.footer a {
+  position: relative;
+  color: var(--gray-color);
+  text-decoration: none; /* remove default underline */
+  transition: color 0.3s;
+}
+
+.footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0; /* start hidden */
+  height: 1px; /* underline thickness */
+  background-color: var(--bright-blue);
+  transition: width 0.3s ease-in-out;
+}
+
+.footer a:hover::after {
+  width: 100%; /* expand to full width on hover */
+}
+
+.footer a:hover {
+  color: var(--bright-blue);
+}
+
+/* Footer bottom border */
+.footer .border-top {
+  border-color: rgba(255, 255, 255, 0.2);
+}

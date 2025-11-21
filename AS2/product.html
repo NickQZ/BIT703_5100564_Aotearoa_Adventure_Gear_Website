@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aotearoa Adventure Gear - Product</title>
+
+ <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,200;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/floating-anchor.css" />
+    <link rel="stylesheet" href="css/popups.css"/>
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg border-bottom">
+      <div class="container py-3">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="images/AdventureLogo.png"
+            class="nav-logo me-4"
+            alt="Logo"
+          />
+        </a>
+
+        <!--Search Bar-->
+        <form class="d-none d-lg-flex mt-3 flex-grow-1 rounded" role="search">
+          <div class="input-group me-2">
+            <span class="input-group-text border-0 px-2">
+              <i
+                class="fa-solid fa-magnifying-glass"
+                style="color: #95c882"
+              ></i>
+            </span>
+
+            <input
+              class="form-control border-0"
+              type="search"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+          </div>
+        </form>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about_us">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+            <li class="nav-cart">
+              <a class="btn btn-dark ms-2" href="cart.html"
+                ><i
+                  class="fa-solid fa-cart-shopping fa-beat me-2"
+                  style="color: #74c0fc"
+                ></i
+                >Your Cart</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= PRODUCT SECTION ================= -->
+    <main id="product-section" class="product-page">
+      <div class="container py-5">
+        <div class="row g-0 border-bottom py-4 align-items-start">
+          <div class="col-lg-6 pe-lg-4 mb-4 mb-lg-0">
+              <div
+                class="product-image h-100 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="images/product1.jpg"
+                  alt="Product name"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+
+              <div class="col-lg-6 pe-lg-4">
+                  <h1 class="product-title mb-2">Ultra Durable Carabiner</h1>
+
+                    <div class="text-warning mb-1 fs-4">
+                        &#9733;&#9733;&#9733;&#9733;&#9734;
+                        <small class="text-muted ms-2">2 reviews</small>
+                      </div>
+                      
+                <div class="d-flex align-items-center mb-3 py-4 border-top border-bottom">
+                  <div class="price display-6 me-6">$ 70</div>
+                  
+                  <div class="w-50 ps-5">
+                          <select class="form-select" aria-label="Select model">
+                          <option selected>Select Strength</option>
+                          <option value="1">Standard (12kN)</option>
+                          <option value="2">Heavy (22kN)</option>
+                          <option value="3">Extreme (28kN)</option>
+                        </select>
+                    </div>
+                  </div>
+
+                  <p class="product-desc mb-4 border-bottom py-4">
+                    A high-strength, weather-resistant carabiner built for maximum safety and durability. Smooth gate action, secure locking, and rugged steel construction make it perfect for climbing, trekking, and everyday gear attachment.
+                  </p>
+
+                  <button class="btn btn-dark btn-lg me-3 add-to-cart" id="AddToCartBtn">
+                    <i class="fa-solid fa-cart-plus me-2"></i> Add To Cart
+                  </button>
+                </div>
+              </div>
+
+    <!-- Similar products -->
+    <section class="similar-products text-center my-5">
+    <h2 class="section-title mb-4">Similar Products</h2>
+
+    <div class="row g-3 justify-content-center">
+
+      <!-- Card 1 -->
+      <div class="col-6 col-sm-3 col-md-3">
+        <div class="similar-card p-5">
+          <a href="#"><img src="images/taglineimage1.jpg" alt="Similar product" class="img-fluid" /></a>
+          <div class="small text-uppercase text-muted">Gerber Knife</div>
+          <div class="mt-1 text-warning mb-1 fs-4">
+            &#9733;&#9733;&#9733;&#9734;&#9734;
+          </div>
+          <div class="mt-2 fw-semibold">$ 210</div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-6 col-sm-3 col-md-3">
+        <div class="similar-card p-5">
+          <a href="#"><img src="images/taglineimage2.jpg" alt="Similar product" class="img-fluid" /></a>
+          <div class="small text-uppercase text-muted">Titanium Cooker</div>
+          <div class="mt-1 text-warning mb-1 fs-4">
+            &#9733;&#9733;&#9733;&#9733;&#9734;
+          </div>
+          <div class="mt-2 fw-semibold">$ 150</div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-6 col-sm-3 col-md-3">
+        <div class="similar-card p-5">
+          <a href="#"><img src="images/taglineimage3.jpg" alt="Similar product" class="img-fluid" /></a>
+          <div class="small text-uppercase text-muted">Navigator Kit</div>
+          <div class="mt-1 text-warning mb-1 fs-4">
+            &#9733;&#9733;&#9734;&#9734;&#9734;
+          </div>
+          <div class="mt-2 fw-semibold">$ 149</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+    <!-- Reviews -->
+    <section class="reviews my-5">
+      <h2 class="section-title mb-4">Reviews</h2>
+
+      <div class="row">
+        <div class="col-12">
+          <!-- Review item -->
+          <div class="review-item d-flex gap-4 py-4 border-bottom">
+            <div class="review-avatar text-center">
+              <div class="avatar-circle mb-2"><i class="fa-regular fa-user"></i></div>
+              <div class="fw-bold">John Doe</div>
+              <small class="text-muted">Nov 18, 2025</small>
+            </div>
+
+            <div class="review-body flex-grow-1">
+              <div class="stars mb-2"> <!--Used different star layout to make review section ratings unique.-->
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="text-muted mb-0">
+                My shipment was longer than I expected, but the gear is top notch!
+              </p>
+            </div>
+          </div>
+
+          <div class="review-item d-flex gap-4 py-4">
+            <div class="review-avatar text-center">
+              <div class="avatar-circle mb-2"><i class="fa-regular fa-user"></i></div>
+              <div class="fw-bold">Jane Doe</div>
+              <small class="text-muted">Nov 25, 2025</small>
+            </div>
+
+            <div class="review-body flex-grow-1">
+              <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-muted mb-0">
+               Excellent Gear, my friend recommended this retailer. At first I was sceptical but this gear is world class! Team is amazing, will be purchasing from here again!
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    </body> 
+
+    <div id="cart-popup" class="cart-popup" style="display:none;">
+    <i class="fa-solid fa-check"></i> Product added to cart!
+  </div>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer py-4">
+      <div class="container py-2">
+        <!-- Footer links as a list to match your CSS -->
+        <ul class="d-flex justify-content-center flex-wrap gap-3">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer copyright -->
+      <p class="text-center">
+        <a href="index.html">© Aotearoa Adventure Gear</a>
+      </p>
+    </footer>
+
+    <script src="js/pop_up.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <a href="#product-section" class="floating-anchor" id="scrollToFeatured">
+      <i class="fa-solid fa-arrow-down fa-flip-vertical"></i>
+    </a>
+
+</html>

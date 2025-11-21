@@ -1,0 +1,22 @@
+.floating-anchor {
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  background-color: var(--fresh-green); /* fresh green accent */
+  color: #fff;
+  padding: 15px 18px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  width: 60px;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.floating-anchor:hover {
+  background-color: var(--bright-blue); /* bright blue hover for attention */
+  transform: translateY(-5px) rotate(5deg);
+  color: var(--text-dark);
+}

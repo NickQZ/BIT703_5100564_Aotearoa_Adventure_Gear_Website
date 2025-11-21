@@ -1,0 +1,57 @@
+/* Navbar container */
+.navbar {
+  background-color: var(--primary-color);
+  border-bottom: 1px solid var(--gray-color);
+}
+
+/* Navbar logo */
+.nav-logo {
+  height: 150px;
+  width: auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: var(--secondary-color);
+}
+
+.nav-link {
+  color: var(--text-light) !important;
+  font-weight: 500;
+}
+
+.nav-item a {
+  position: relative;
+  color: var(--gray-color);
+  text-decoration: none; /* remove default underline */
+  transition: color 0.3s;
+}
+
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0; /* start hidden */
+  height: 1px; /* underline thickness */
+  background-color: var(--bright-blue);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item a:hover::after {
+  width: 100%; /* expand to full width on hover */
+}
+
+.nav-item a:hover {
+  color: var(--bright-blue);
+}
+
+.nav-link:hover {
+  color: var(--bright-blue) !important;
+}
+
+.nav-cart a:hover{
+  color: var(--bright-blue);
+}

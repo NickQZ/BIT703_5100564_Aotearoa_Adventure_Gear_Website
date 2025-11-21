@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aotearoa Adventure Gear - Home</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,200;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/floating-anchor.css" />
+    <link rel="stylesheet" href="css/popups.css"/>
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+  </head>
+
+  <body>
+ <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg border-bottom">
+      <div class="container py-3">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="images/AdventureLogo.png"
+            class="nav-logo me-4"
+            alt="Logo"
+          />
+        </a>
+
+        <!--Search Bar-->
+        <form class="d-none d-lg-flex mt-3 flex-grow-1 rounded" role="search">
+          <div class="input-group me-2">
+            <span class="input-group-text border-0 px-2">
+              <i
+                class="fa-solid fa-magnifying-glass"
+                style="color: #95c882"
+              ></i>
+            </span>
+
+            <input
+              class="form-control border-0"
+              type="search"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+          </div>
+        </form>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about_us">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+            <li class="nav-cart">
+              <a class="btn btn-dark ms-2" href="cart.html"
+                ><i
+                  class="fa-solid fa-cart-shopping fa-beat me-2"
+                  style="color: #74c0fc"
+                ></i
+                >Your Cart</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero text-center">
+      <div class="container py-5">
+        <h4 class="display-5 mb-3">
+          "Equipping outdoor adventurers with gear they can't live without."
+        </h4>
+
+        <div class="row justify-content-center my-4">
+          <div class="col-4 col-md-2 p-3 mx-2">
+            <a href="#">
+              <img
+                src="images/taglineimage1.jpg"
+                class="product_image-fluid"
+                alt="Featured product 1"
+              />
+            </a>
+          </div>
+          <div class="col-4 col-md-2 p-3 mx-2">
+            <a href="#">
+              <img
+                src="images/taglineimage2.jpg"
+                class="product_image-fluid"
+                alt="Featured product 1"
+              />
+            </a>
+          </div>
+          <div class="col-4 col-md-2 p-3 mx-2">
+            <a href="#">
+              <img
+                src="images/taglineimage3.jpg"
+                class="product_image-fluid"
+                alt="Featured product 1"
+              />
+            </a>
+          </div>
+        </div>
+
+        <button class="btn btn-dark px-4 rounded"><a href="shop.html">Shop Now</a></button>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED PRODUCTS ================= -->
+    <section id="featuredProducts" class="py-5 border-top border-bottom">
+      <div class="container">
+        <h1 class="text-center mb-4">Featured Products</h1>
+
+        <div
+          id="featuredProductsCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <!-- Product 1 -->
+                <div class="col-md-5 p-3 text-center">
+                  <a href="product.html">
+                    <img
+                      src="images/product1.jpg"
+                      class="product_image-fluid rounded"
+                      alt="Extra Product 1"
+                    />
+                  </a>
+                  <p class="mt-2">Ultra Durable Carabiner 
+                    <br>$ 70</p>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-5 p-3 text-center">
+                  <a href="#"> <!--Link for future product pages-->
+                    <img
+                      src="images/product2.jpg"
+                      class="product_image-fluid rounded"
+                      alt="Extra Product 2"
+                    />
+                  </a>
+                  <p class="mt-2">Trail Pro Hiking Boots
+                    <br>$ 300</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <!-- Product 3 -->
+                <div class="col-md-5 p-3 text-center">
+                  <a href="#"> <!--Link for future product pages-->
+                    <img
+                      src="images/product3.jpg"
+                      class="product_image-fluid rounded"
+                      alt="Extra Product 3"
+                    />
+                  </a>
+                  <p class="mt-2">Alpine Survival Knife
+                    <br>$ 2,000</p>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-md-5 p-3 text-center">
+                  <a href="#"> <!--Link for future product pages-->
+                    <img
+                      src="images/product4.jpg"
+                      class="product_image-fluid rounded"
+                      alt="Extra Product 4"
+                    />
+                  </a>
+                  <p class="mt-2">Southern Adventure Daypack - 25L 
+                   <br>$ 220</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel controls -->
+          <button class="carousel-control-prev" type="button" id="carouselPrev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" id="carouselNext">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="newsletter">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <!-- Left column: Title + Description -->
+          <div class="col-md-6">
+            <h1 class="mb-3">Newsletter</h1>
+            <p>Be the first to hear about new gear releases & discounts.</p>
+          </div>
+
+          <!-- Right column: Email + Button -->
+          <div class="col-md-6">
+            <div class="row g-2">
+              <div class="col-md-8">
+                <input
+                  type="email"
+                  id="newsletterEmail"
+                  class="form-control"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="col-md-4">
+                <button id="subscribeBtn" class="btn btn-light w-100">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCT GRID ================= -->
+    <section class="border-top">
+      <div class="container py-5">
+        <div class="row g-2">
+          <!-- Product 1 (left, large) -->
+          <div class="col-lg-6 col-md-12">
+            <div class="p-3 h-100">
+              <a href="product.html">
+                <img
+                  src="images/product1.jpg"
+                  class="product_image-fluid"
+                  alt="Product 1"
+                />
+              </a>
+              <p class="mt-2">Ultra Durable Carabiner
+                <div class="text-warning mb-1">
+                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                  </div>$ 70</p>
+            </div>
+          </div>
+
+          <!-- Other 4 products (right, smaller stacked) -->
+          <div class="col-lg-6 col-md-12">
+            <div class="row g-4">
+              <div class="col-6">
+                <div class="p-3">
+                  <a href="#">
+                    <img
+                      src="images/product2.jpg"
+                      class="product_image-fluid"
+                      alt="Product 2"
+                    />
+                  </a>
+                  <p class="mt-2">Trail Pro Hiking Boots
+                    <div class="text-warning mb-1">
+                    &#9733;&#9733;&#9733;&#9734;&#9734;
+                    </div>$ 300</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3">
+                  <a href="#">
+                    <img
+                      src="images/product3.jpg"
+                      class="product_image-fluid"
+                      alt="Product 3"
+                    />
+                  </a>
+                  <p class="mt-2">Alpine Survival Knife
+                    <div class="text-warning mb-1">
+                    &#9733;&#9733;&#9733;&#9734;&#9734;
+                    </div>$ 2,000</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3">
+                  <a href="#">
+                    <img
+                      src="images/product4.jpg"
+                      class="product_image-fluid"
+                      alt="Product 4"
+                    />
+                  </a>
+                  <p class="mt-2">Southern Adventure Daypack - 25L 
+                    <div class="text-warning mb-1">
+                    &#9733;&#9733;&#9733;&#9734;&#9734;
+                    </div>$ 600</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3">
+                  <a href="#">
+                    <img
+                      src="images/product5.jpg"
+                      class="product_image-fluid"
+                      alt="Product 5"
+                    />
+                  </a>
+                  <p class="mt-2">Stormshelter Tent - 2P
+                    <div class="text-warning mb-1">
+                    &#9733;&#9733;&#9733;&#9734;&#9734;
+                    </div>$ 4,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="about_us text-center border-top">
+      <div class="container py-5">
+        <h1>About Us</h1>
+        <p class="mx-auto" style="max-width: 700px">
+          Aotearoa Adventure Gear is a premium outdoor equipment retailer
+          catering to adventure enthusiasts across New Zealand.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container py-2">
+        <div class="row mb-4">
+          <!-- Logo & Address -->
+          <div class="col-md-3 mb-3 mb-md-0 text-center text-md-start">
+            <a href="index.html">
+              <img
+                src="images/AdventureLogo.png"
+                class="footer-logo mb-2"
+                alt="Logo"
+              />
+            </a>
+            <p class="small">123 Lakeview Drive, Queenstown 9300, New Zealand</p>
+          </div>
+
+          <!-- Links -->
+          <div class="col-md-3 mb-3 mb-md-0">
+            <h6 class="text-uppercase">Main Menu</h6>
+            <ul class="list-unstyled small">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mb-3 mb-md-0">
+            <h6 class="text-uppercase">Company</h6>
+            <ul class="list-unstyled small">
+              <li>The Company</li>
+              <li>Careers</li>
+              <li>Press</li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h6 class="text-uppercase">Discover</h6>
+            <ul class="list-unstyled small">
+              <li>The Team</li>
+              <li>Our History</li>
+              <li>Brand Motto</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container left text-secondary small py-2 border-top">
+        <a href="index.html">© Aotearoa Adventure Gear</a>
+      </div>
+    </footer>
+    <script src="js/dataValidation.js"></script>
+    <script src="js/floating_anchor.js"></script>
+    <script src="js/home_carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+      <a href="#featuredProducts" class="floating-anchor" id="scrollToFeatured">
+      <i class="fa-solid fa-arrow-down fa-flip-vertical"></i>
+    </a>
+  </body>
+</html>

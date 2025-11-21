@@ -1,0 +1,76 @@
+/* Paragraph spacing and color */
+p {
+  color: #000000;
+  line-height: 1.6;
+}
+
+.hero {
+  background: linear-gradient(
+    180deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  margin: 0;
+  color: var(--gray-color);
+}
+
+.newsletter,
+.newsletter p {
+  background: var(--secondary-color);
+  color: var(--gray-color);
+  margin: 0;
+}
+
+.about_us {
+  background: linear-gradient(
+    180deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  color: var(--gray-color); /* text stays gray */
+  margin: 0;
+  padding: 3rem 1rem; /* optional spacing */
+}
+
+.about_us p {
+  color: var(--gray-color); /* ensure paragraph text is readable */
+  background: none; /* remove gradient from paragraph */
+}
+
+/*Cart styles*/
+.steps .step {
+  font-size: 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid transparent;
+  color: var(--text-next);
+}
+
+.steps .step.active {
+  border-bottom-color: #333;
+  color: #000;
+}
+
+.placeholder-img {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.cart-item input[type="number"] {
+  width: 70px;
+}
+
+.summary-box label {
+  letter-spacing: 0.5px;
+}
+
+.summary-box {
+  background: #fafafa;
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* perfect square */
+  object-fit: cover;
+}

@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #294445; /* main brand color */
+  --primary-dark: #1e3334; /* darker version for hover/buttons */
+  --secondary-color: #5a7d99; /* accent color */
+  --secondary-dark: #4a6a84; /* darker accent */
+  --light-color: #ffffff; /* white */
+  --gray-color: #dde2e6; /* light gray backgrounds */
+  --text-dark: #263233; /* main text */
+  --text-light: #fafafa; /* light text */
+  --text-next: #878787; /* secondary text color */
+  --fresh-green: #95c882; /* fresh green accent */
+  --bright-blue: #74c0fc; /* bright blue hover for attention */
+  --success-green: #28a745; /* text color */
+  --pop-up-bg: #d7f4de; /* background popup color */
+}
