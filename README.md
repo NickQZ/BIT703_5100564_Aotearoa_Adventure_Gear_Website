@@ -61,7 +61,7 @@ This project demonstrates competency in:
 
 # Interactive Shopping Cart
 
-- Automatic updates to total (*If html is pricing changes, required manual change)
+- Automatic updates to total (*Only if manually changed inside HTML document!)
 
 - Free shipping automatically applied when total exceeds $600
 
@@ -116,7 +116,7 @@ Bootstrap Framework – Responsive layout and UI elements
 
 - No persistent user accounts
 
-These limitations align with the assessment scope.
+These limitations align with the assessment outline.
 
 # Running the Project
 
