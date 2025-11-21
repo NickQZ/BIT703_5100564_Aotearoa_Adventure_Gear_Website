@@ -130,6 +130,23 @@ These limitations align with the assessment scope.
 Author
 
 Nicholas Jones — Student ID 5100564
-BIT703 – Web Technologies
-Open Polytechnic of New Zealand
-21/11/2025
+- BIT703 
+– Web Technologies
+- Open Polytechnic of New Zealand
+- 21/11/2025
+
+# Reference Images 
+- All images inside this mock website have been sourced from *Pixels.com
+- All images are Free to use.
+- https://www.pexels.com/
+  Image links are as follows:
+  - https://www.pexels.com/photo/white-camping-tent-2819554/
+  - https://www.pexels.com/photo/unpaired-brown-leather-boot-267242/
+  - https://www.pexels.com/photo/rope-and-carabiner-on-a-climbing-wall-5916523/
+  - https://www.pexels.com/photo/round-silver-colored-analog-watch-beside-compass-691640/
+  - https://www.pexels.com/photo/folding-knife-2599276/
+  - https://www.pexels.com/photo/round-black-compass-2427813/
+  - https://www.pexels.com/photo/close-up-of-pocket-knife-in-natural-setting-34747405/
+  - https://www.pexels.com/photo/portable-camping-stove-in-autumn-forest-setting-34764651/
+  - https://www.pexels.com/photo/close-up-photography-of-black-backpack-1363956/
+
